@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+
+{% block side-content %}
+
+<h3> Recent Posts </h3>
+    {% for posto in post_list %}
+        {{posto.title}}
+    {%endfor%}
+
+    {% for post in post_list %}
+    {{ post.title }}
+    {%endfor%}
+
+{% endblock %}

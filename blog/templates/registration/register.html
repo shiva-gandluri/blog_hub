@@ -1,0 +1,32 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+
+<div class="text-center " style="display: flex; align-items: center; padding-top: 50px; padding-bottom: 50px; padding-left: 100px; ">  
+    <div class="form-signin p-5" >
+      <form class="my-3 " method="POST" action="{% url 'register' %}">
+        {% csrf_token %}
+        <h1 class="h3 mb-3 fw-normal">Please Register</h1>
+        {% if form.errors %}
+          <p>Passwords should be atleast 8 letters long and should match!!</p>
+        {% endif %}
+        <div class="form-floating">
+          <p><label>{{form.username.label}} : </label>
+            {{form.username}} </p>
+        </div>
+        <div class="form-floating">
+          <p><label>{{form.password1.label}} : </label>
+            {{form.password1}} </p>
+        </div>
+        <div class="form-floating">
+            <p><label>Confirm Password : </label>
+              {{form.password2}} </p>
+          </div>
+        <button class="w-100 btn btn-lg btn-primary mt-3 mb-1" type="submit">Register</button>
+        <p> Already have an account? <a class="text-primary" href="{% url 'login' %}">Sign in</a></p>
+      </form>
+    </div>    
+  </div>
+
+{% endblock content %}

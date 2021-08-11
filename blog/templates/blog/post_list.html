@@ -1,0 +1,20 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<div class="centerstage">
+    {% for post in post_list %}
+
+        <div class="post mb-4">
+            <h3><a class="text-decoration-none" href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h3>
+            <a class="pl-3 text-decoration-none" class="pl-3 text-decoration-none" style="margin-bottom: 8px;">Published : <b><i>{{ post.author | title }}</i></b> , <i>{{ post.published_date|date:'d-m-Y'}}</i></a>
+            &emsp; 👏 : {{ post.claps }}</a>
+            &emsp;
+            <a class="text-decoration-none" href="{% url 'post_detail' pk=post.pk %}">
+                💬
+                : {{ post.approve_comments.count }}
+            </a>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
+
