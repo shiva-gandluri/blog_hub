@@ -1,8 +1,3 @@
-:::::::::::::::::::
-To be done:
-:::::::::::::::::::
-1. Add user authorization
-2. Update styling to entire website
 
 :::::::::::::::::::
 Commands:
@@ -22,6 +17,4 @@ General details:
 Virtual environment name : project_6
 Python version: 3.6.5
 Django version installed : 3.2
-Django-bootstrap-modal-forms : 2.2.0
-ckeditor version installed: 4.16.1
 
