@@ -19,8 +19,8 @@ Third parties used: [Medium-editor](https://github.com/yabwe/medium-editor)
 
 
 ## Versions
-* Python version: 3.6.5
-* Django version installed : 3.2
+* Python : 3.6.5
+* Django : 3.2
 
 
 ## Terminal Commands
