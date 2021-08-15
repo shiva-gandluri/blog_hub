@@ -25,7 +25,7 @@ Third parties used: [Medium-editor](https://github.com/yabwe/medium-editor)
 
 ## Terminal Commands
 1. Open Terminal
-2. Install Python and necessary libraries (joblib, pandas, scikit learn and bootstrap modal forms)
+2. Install Python and necessary third parties ([Medium-editor](https://github.com/yabwe/medium-editor), Bootstrap)
 3. Install Django as mentioned in [Django Official Page](https://www.djangoproject.com/download/).
 4. Go to your virtual environment project by running the command in terminal: ```workon your_virtualenv_name```
 5. Run in terminal: ```python ./manage.py runserver```
